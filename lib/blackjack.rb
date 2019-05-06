@@ -11,10 +11,13 @@ end
 
 def display_card_total
   # code #display_card_total here
+
 end
 
 def prompt_user
   # code #prompt_user here
+  puts "Type 'h' to hit or 's' to stay"
+  decision= gets.chomp
 end
 
 def get_user_input
