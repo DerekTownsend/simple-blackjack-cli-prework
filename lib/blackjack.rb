@@ -46,7 +46,8 @@ def hit?(card_total)
 
   if decision=="s" or decision=="h"
     while decision=="h"
-    card_total+=deal_card
+      card_total+=deal_card
+    end
   else
     invalid_command
   end
