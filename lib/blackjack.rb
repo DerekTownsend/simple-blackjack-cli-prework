@@ -67,10 +67,9 @@ def runner
   # code runner here
   welcome
   card_total=initial_round
-  prompt_user
-  decision=get_user_input
-
   until decision=="s"
+    prompt_user
+    decision=get_user_input
     hit?(card_total)
   end
 
