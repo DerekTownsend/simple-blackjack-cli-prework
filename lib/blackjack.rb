@@ -67,10 +67,9 @@ def runner
   # code runner here
   welcome
   card_total=initial_round
-  prompt_user
-  decision=get_user_input
-  until decision=="s"
-    hit?(card_total)
+  card_total=hit?(card_total)
+  
+  until card_total>=21
   end
 
 end
