@@ -70,7 +70,7 @@ def runner
   prompt_user
   decision=get_user_input
 
-  until condition
+  until decision=="s"
     hit?(card_total)
   end
 
