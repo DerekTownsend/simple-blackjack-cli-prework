@@ -44,7 +44,7 @@ def hit?(card_total)
   prompt_user
   decision=get_user_input
   if decision=="s"
-    card_total
+    break
   elsif decision=="h"
     card_total+=deal_card
   else
@@ -67,5 +67,11 @@ def runner
   # code runner here
   welcome
   card_total=initial_round
-  hit?(card_total)
+  prompt_user
+  decision=get_user_input
+
+  until condition
+    hit?(card_total)
+  end
+
 end
